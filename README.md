@@ -138,6 +138,7 @@ Internet → API Gateway → Serverless Container → Storage
 
 #### **3. Storage**
 - **Object Storage**: AWS S3 / GCP Cloud Storage / Azure Blob Storage
+- Para guardar CSVs o resultados temporalmente
 
 ### **🛠️ Tecnologías**
 
@@ -145,6 +146,6 @@ Internet → API Gateway → Serverless Container → Storage
 Containers: Docker
 Compute: Serverless containers (cualquier cloud)
 Gateway: Managed API Gateway
-Storage: Object storage 
+Storage: Object storage (opcional)
 CI/CD: GitHub Actions
 Monitoring: Cloud-native tools
