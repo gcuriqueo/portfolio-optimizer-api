@@ -119,3 +119,32 @@ python main.py
 # Modo desarrollo
 uvicorn main:app --reload
 ```
+
+## 🏗️ **Arquitectura Simple y Escalable para Producción**
+
+### **📋 Componentes Principales**
+
+Internet → API Gateway → Serverless Container → Storage
+
+#### **1. Entrada y Seguridad**
+- **API Gateway** (AWS API Gateway / GCP Apigee / Azure API Management)
+- **Rate limiting** y autenticación
+- **Load balancing** automático
+
+#### **2. Compute Serverless**
+- **Serverless Containers**: AWS Fargate / GCP Cloud Run / Azure Container Instances
+- Auto-scaling (0 → N instancias)
+- Pay-per-request
+
+#### **3. Storage**
+- **Object Storage**: AWS S3 / GCP Cloud Storage / Azure Blob Storage
+
+### **🛠️ Tecnologías**
+
+```yaml
+Containers: Docker
+Compute: Serverless containers (cualquier cloud)
+Gateway: Managed API Gateway
+Storage: Object storage 
+CI/CD: GitHub Actions
+Monitoring: Cloud-native tools
